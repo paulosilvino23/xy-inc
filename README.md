@@ -10,7 +10,7 @@ structure.
 Databases were not applied to simplify the solution. Instead memory repositories have been used to
 store the objects.
 
-To test the solution use the CURL tool. Same examples are located at the path below:
+To test the solution use the CURL tool. Some examples are located at the path below:
 
 	\WebContent\WEB-INF\scripts\CURL.txt
 
