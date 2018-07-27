@@ -7,7 +7,7 @@ To solve the scalability requiriments APIs were designed to support Models and A
 user can add Models and theirs attributes freely and use them later to insert new items based in that
 structure.
 
-Databases were not applied to simplify the solution. Instead memory repositories has been used to
+Databases were not applied to simplify the solution. Instead memory repositories have been used to
 store the objects.
 
 To test the solution use the CURL tool. Same examples are located at the path below:
