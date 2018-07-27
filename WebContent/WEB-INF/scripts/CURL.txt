@@ -1,0 +1,42 @@
+
+curl --request GET http://localhost:8080/DesafioZupRESTFul/rest/model
+
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model --data "name=Product"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model --data "name=Building"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model --data "name=Food"
+
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Product --data "attributeName=Name&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Product --data "attributeName=Description&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Product --data "attributeName=ExpireDate&attributeDataType=Date"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Product --data "attributeName=Quantity&attributeDataType=Integer"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Product --data "attributeName=Price&attributeDataType=Double"
+
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Building --data "attributeName=Engineer&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Building --data "attributeName=Address&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Building --data "attributeName=Age&attributeDataType=Integer"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Building --data "attributeName=BIN&attributeDataType=Integer"
+
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=Name&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=Description&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=NutritionInformation&attributeDataType=String"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=Weight&attributeDataType=Integer"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=Price&attributeDataType=Double"
+curl --request POST http://localhost:8080/DesafioZupRESTFul/rest/model/Food --data "attributeName=ExpireDate&attributeDataType=Date"
+
+
+curl --request GET http://localhost:8080/DesafioZupRESTFul/rest/model/1
+curl --request GET http://localhost:8080/DesafioZupRESTFul/rest/model/2
+curl --request GET http://localhost:8080/DesafioZupRESTFul/rest/model/3
+
+
+
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"Name\",\"value\":\"Computer\"},{\"name\":\"Description\",\"value\":\"HP Pavillion\"},{\"name\":\"ExpireDate\",\"value\":\"01/01/2018\"},{\"name\":\"Quantity\",\"value\":12},{\"name\":\"Price\",\"value\":1222.11}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/PRODUCT
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"Name\",\"value\":\"Mouse\"},{\"name\":\"Description\",\"value\":\"Mouse USB\"},{\"name\":\"ExpireDate\",\"value\":\"10/01/2018\"},{\"name\":\"Quantity\",\"value\":5},{\"name\":\"Price\",\"value\":19.77}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/PRODUCT
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"Name\",\"value\":\"Monitor\"},{\"name\":\"Description\",\"value\":\"Monitor HDMI Full HD\"},{\"name\":\"ExpireDate\",\"value\":\"03/01/2015\"},{\"name\":\"Quantity\",\"value\":12},{\"name\":\"Price\",\"value\":500.10}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/PRODUCT
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"Name\",\"value\":\"Desk\"},{\"name\":\"Description\",\"value\":\"Description of the Product Desk\"},{\"name\":\"ExpireDate\",\"value\":\"01/11/2018\"},{\"name\":\"Quantity\",\"value\":11},{\"name\":\"Price\",\"value\":454.85}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/PRODUCT
+
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"Name\",\"value\":\"Product 1\"}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/Vehicle
+curl --header "Content-Type: application/json" --request POST --data "[{\"name\":\"HowMuch\",\"value\":\"Product 1\"}]" http://localhost:8080/DesafioZupRESTFul/rest/modelitem/Food
+
+
+curl --request GET http://localhost:8080/DesafioZupRESTFul/rest/modelitem
